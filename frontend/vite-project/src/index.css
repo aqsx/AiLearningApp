@@ -1,0 +1,19 @@
+/* 1. ALL imports must be at the top */
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap');
+
+/* 2. Remove quotes for some environments */
+@plugin @tailwindcss/typography; 
+
+/* 3. Theme Configuration */
+@theme {
+  --font-display: "Urbanist", sans-serif;
+  --color-primary: #0ea5e9;
+}
+
+/* 4. Base Styles */
+@layer base {
+  html {
+    font-family: var(--font-display);
+  }
+}
